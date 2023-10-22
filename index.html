@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leandra Cometti">
+    <meta name="description" content="Cronômetro feito com JavaScript">
+
+    <title>Cronômetro</title>
+
+    <link rel="stylesheet" href="src/style/style.css">
+    <script src="https://kit.fontawesome.com/0b90b34a5d.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <h1 class="titulo">Cronômetro com JavaScript</h1>
+
+    <!--container do cronômetro-->
+    <div class="container">
+        <h1 id="js-relogio">00:00:00</h1>
+        <div class="buttons">
+            <button id="js-btn_iniciar"><i class="fa-solid fa-play"></i></button>
+            <button id="js-btn_pausar"><i class="fa-solid fa-pause"></i></button>
+            <button id="js-btn_resetar"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+    </div>
+
+    <!--container para o botão switch-->
+    <div class="btn_modo-noturno">
+        <i class="fa-regular fa-sun"></i>
+
+        <input type="checkbox" id="checkbox" />
+            <label for="checkbox" class="switch">
+                <span class="slider"></span>
+            </label>
+
+        <i class="fa-regular fa-moon"></i>
+    </div>
+    
+    <script src="src/js/script.js"></script>
+    
+</body>
+</html>
